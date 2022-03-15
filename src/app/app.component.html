@@ -1,0 +1,60 @@
+<section>
+
+  <div class="container">
+
+    <div class="display">
+
+      <div class="mainDisplay">
+        {{display}}
+        <div class="subDisplay">{{subDisplay}}</div>
+
+      </div>
+
+
+    </div>
+
+
+    <div class="allButtons">
+      <div class="button allClear">
+        <div class="C" (click)="allClear()">C</div>
+      </div>
+      <div class="button lastEntetyClear">
+        <div class="CE" (click)="pressCE()">CE</div>
+      </div>
+      <div class="other button">
+        <div class="mMenos">M-</div>
+      </div>
+      <div class="other button">
+        <div class="M+">M+</div>
+      </div>
+
+      <div id="off" class="button off">OFF</div>
+      <div class="button operation" (click)="pressKey('√')">√</div>
+      <div class="button operation" (click)="pressKey('%')">%</div>
+      <div class="button operation" (click)="pressKey('/')">/</div>
+
+      <div class="button number" (click)="pressKey('7')">7</div>
+      <div class="button number" (click)="pressKey('8')">8</div>
+      <div class="button number" (click)="pressKey('9')">9</div>
+      <div class="button operation" (click)="pressKey('x')">x</div>
+
+      <div class="button number" (click)="pressKey('4')">4</div>
+      <div class="button number" (click)="pressKey('5')">5</div>
+      <div class="button number" (click)="pressKey('6')">6</div>
+      <div class="button operation" (click)="pressKey('-')">-</div>
+
+      <div class="button number" (click)="pressKey('1')">1</div>
+      <div class="button number" (click)="pressKey('2')">2</div>
+      <div class="button number" (click)="pressKey('3')">3</div>
+      <div class="button operation plus" (click)="pressKey('+')">+</div>
+
+
+      <div class="button number" (click)="pressKey('0')">0</div>
+      <div class="button number dot" (click)="pressKey('.')">.</div>
+      <div class="button equal" (click)="pressEqual()">=</div>
+    </div>
+
+
+  </div>
+</section>
+
